@@ -6,16 +6,18 @@ import (
 	"image/color"
 	"log"
 	"math/rand"
+	"os"
 	"runtime"
+	"strconv"
 	"sync"
 	"time"
 
 	"github.com/hajimehoshi/ebiten"
 )
 
-const scale = 2
-const WIDTH = 1000
-const HEIGHT = 1000
+const scale = 1
+const WIDTH = 1500
+const HEIGHT = 1500
 
 var black color.RGBA = color.RGBA{95, 95, 95, 255}    //95,95,95
 var white color.RGBA = color.RGBA{233, 233, 233, 255} //233,233,233
@@ -23,9 +25,10 @@ var grid [WIDTH][HEIGHT]uint8 = [WIDTH][HEIGHT]uint8{}
 var buffer [WIDTH][HEIGHT]uint8 = [WIDTH][HEIGHT]uint8{}
 var counter int = 0
 var totalCount int = 0
-var parallel bool = false
 
-var NumWorkers int = 8
+var parallel bool = true
+var NumWorkers int = 16
+
 var in chan int = make(chan int, 2500)
 var out chan int = make(chan int, 2500)
 
@@ -180,13 +183,38 @@ func start() {
 	if err := ebiten.Run(frame, WIDTH*scale, HEIGHT*scale, 2, "Conway's Game of Go"); err != nil {
 		t := time.Now()
 		finalTime := t.Sub(start)
-		fmt.Printf("Finished: %v \n", finalTime)
+
+		var concurrent string
+		if parallel {
+			concurrent = "Yes"
+		} else {
+			concurrent = "No"
+			NumWorkers = 0
+
+		}
+
+		var msg string = ("Finished: " + strconv.Itoa(int(finalTime.Microseconds())) + " microseconds  Concurrent?:" +
+			concurrent + "   Gophers:" + strconv.Itoa(NumWorkers) + "  Size: " +
+			strconv.Itoa(HEIGHT) + "x" + strconv.Itoa(WIDTH) + " \n ")
+
+		fmt.Printf(msg)
+
+		f, err := os.OpenFile("text.log",
+			os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+		if err != nil {
+			log.Println(err)
+		}
+		defer f.Close()
+		if _, err := f.WriteString(msg); err != nil {
+			log.Println(err)
+		}
+
 		log.Fatal(err)
 	}
 
 }
 
 func main() {
-	parallel = true
+	//parallel = true
 	start()
 }

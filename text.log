@@ -1,0 +1,192 @@
+
+ Finished: 1683728 microseconds  Concurrent?:No   Gophers:0  Size: 100x100 
+ Finished: 1788994 microseconds  Concurrent?:No   Gophers:0  Size: 100x100 
+ Finished: 1871109 microseconds  Concurrent?:No   Gophers:0  Size: 100x100 
+ Finished: 1857351 microseconds  Concurrent?:No   Gophers:0  Size: 100x100 
+ Finished: 1871494 microseconds  Concurrent?:No   Gophers:0  Size: 100x100
+ 
+
+ Finished: 1809365 microseconds  Concurrent?:Yes   Gophers:4  Size: 100x100 
+ Finished: 1832284 microseconds  Concurrent?:Yes   Gophers:4  Size: 100x100 
+ Finished: 1892906 microseconds  Concurrent?:Yes   Gophers:4  Size: 100x100 
+ Finished: 1875112 microseconds  Concurrent?:Yes   Gophers:4  Size: 100x100 
+ Finished: 1873033 microseconds  Concurrent?:Yes   Gophers:4  Size: 100x100
+ 
+  
+ Finished: 1766958 microseconds  Concurrent?:Yes   Gophers:8  Size: 100x100 
+ Finished: 1798984 microseconds  Concurrent?:Yes   Gophers:8  Size: 100x100 
+ Finished: 1871572 microseconds  Concurrent?:Yes   Gophers:8  Size: 100x100 
+ Finished: 1873061 microseconds  Concurrent?:Yes   Gophers:8  Size: 100x100 
+ Finished: 1797948 microseconds  Concurrent?:Yes   Gophers:8  Size: 100x100
+  
+ Finished: 1777473 microseconds  Concurrent?:Yes   Gophers:16  Size: 100x100 
+ Finished: 1768683 microseconds  Concurrent?:Yes   Gophers:16  Size: 100x100 
+ Finished: 1866364 microseconds  Concurrent?:Yes   Gophers:16  Size: 100x100 
+ Finished: 1856738 microseconds  Concurrent?:Yes   Gophers:16  Size: 100x100 
+ Finished: 1759981 microseconds  Concurrent?:Yes   Gophers:16  Size: 100x100 
+ 
+ Finished: 1755953 microseconds  Concurrent?:No   Gophers:0  Size: 500x500 
+ Finished: 1801102 microseconds  Concurrent?:No   Gophers:0  Size: 500x500 
+ Finished: 1856948 microseconds  Concurrent?:No   Gophers:0  Size: 500x500 
+ Finished: 1887012 microseconds  Concurrent?:No   Gophers:0  Size: 500x500 
+ Finished: 1784952 microseconds  Concurrent?:No   Gophers:0  Size: 500x500
+  
+ Finished: 1773573 microseconds  Concurrent?:Yes   Gophers:4  Size: 500x500 
+ Finished: 1856795 microseconds  Concurrent?:Yes   Gophers:4  Size: 500x500 
+ Finished: 1773281 microseconds  Concurrent?:Yes   Gophers:4  Size: 500x500 
+ Finished: 1895627 microseconds  Concurrent?:Yes   Gophers:4  Size: 500x500 
+ Finished: 1879547 microseconds  Concurrent?:Yes   Gophers:4  Size: 500x500 
+ 
+ Finished: 1799860 microseconds  Concurrent?:Yes   Gophers:8  Size: 500x500 
+ Finished: 1775172 microseconds  Concurrent?:Yes   Gophers:8  Size: 500x500 
+ Finished: 1888629 microseconds  Concurrent?:Yes   Gophers:8  Size: 500x500 
+ Finished: 1887765 microseconds  Concurrent?:Yes   Gophers:8  Size: 500x500 
+ Finished: 1863138 microseconds  Concurrent?:Yes   Gophers:8  Size: 500x500 
+ 
+ Finished: 1787749 microseconds  Concurrent?:Yes   Gophers:16  Size: 500x500 
+ Finished: 1893272 microseconds  Concurrent?:Yes   Gophers:16  Size: 500x500 
+ Finished: 1898920 microseconds  Concurrent?:Yes   Gophers:16  Size: 500x500 
+ Finished: 1761628 microseconds  Concurrent?:Yes   Gophers:16  Size: 500x500 
+ Finished: 1813830 microseconds  Concurrent?:Yes   Gophers:16  Size: 500x500 
+
+ 
+ Finished: 1785263 microseconds  Concurrent?:No   Gophers:0  Size: 1000x1000 
+ Finished: 1785263 microseconds  Concurrent?:No   Gophers:0  Size: 1000x1000 
+ Finished: 1937935 microseconds  Concurrent?:No   Gophers:0  Size: 1000x1000 
+ Finished: 2074056 microseconds  Concurrent?:No   Gophers:0  Size: 1000x1000 
+ Finished: 1771522 microseconds  Concurrent?:No   Gophers:0  Size: 1000x1000 
+ 
+ Finished: 1793113 microseconds  Concurrent?:Yes   Gophers:4  Size: 1000x1000 
+ Finished: 1910122 microseconds  Concurrent?:Yes   Gophers:4  Size: 1000x1000 
+ Finished: 1899221 microseconds  Concurrent?:Yes   Gophers:4  Size: 1000x1000 
+ Finished: 1923528 microseconds  Concurrent?:Yes   Gophers:4  Size: 1000x1000 
+ Finished: 1936080 microseconds  Concurrent?:Yes   Gophers:4  Size: 1000x1000
+  
+ Finished: 1781480 microseconds  Concurrent?:Yes   Gophers:8  Size: 1000x1000 
+ Finished: 1805077 microseconds  Concurrent?:Yes   Gophers:8  Size: 1000x1000 
+ Finished: 1907489 microseconds  Concurrent?:Yes   Gophers:8  Size: 1000x1000 
+ Finished: 1916768 microseconds  Concurrent?:Yes   Gophers:8  Size: 1000x1000 
+ Finished: 1936732 microseconds  Concurrent?:Yes   Gophers:8  Size: 1000x1000
+  
+ Finished: 1797828 microseconds  Concurrent?:Yes   Gophers:16  Size: 1000x1000 
+ Finished: 1779882 microseconds  Concurrent?:Yes   Gophers:16  Size: 1000x1000 
+ Finished: 1790007 microseconds  Concurrent?:Yes   Gophers:16  Size: 1000x1000 
+ Finished: 1913834 microseconds  Concurrent?:Yes   Gophers:16  Size: 1000x1000 
+ Finished: 1773455 microseconds  Concurrent?:Yes   Gophers:16  Size: 1000x1000 
+
+
+ Finished: 3426686 microseconds  Concurrent?:No   Gophers:0  Size: 1500x1500 
+ Finished: 3511773 microseconds  Concurrent?:No   Gophers:0  Size: 1500x1500 
+ Finished: 3935445 microseconds  Concurrent?:No   Gophers:0  Size: 1500x1500 
+ Finished: 3327550 microseconds  Concurrent?:No   Gophers:0  Size: 1500x1500 
+ Finished: 4031961 microseconds  Concurrent?:No   Gophers:0  Size: 1500x1500 
+ 
+ Finished: 1962203 microseconds  Concurrent?:Yes   Gophers:4  Size: 1500x1500 
+ Finished: 2018985 microseconds  Concurrent?:Yes   Gophers:4  Size: 1500x1500 
+ Finished: 1781185 microseconds  Concurrent?:Yes   Gophers:4  Size: 1500x1500 
+ Finished: 1860487 microseconds  Concurrent?:Yes   Gophers:4  Size: 1500x1500 
+ Finished: 1932094 microseconds  Concurrent?:Yes   Gophers:4  Size: 1500x1500
+  
+ Finished: 1780672 microseconds  Concurrent?:Yes   Gophers:8  Size: 1500x1500 
+ Finished: 1800146 microseconds  Concurrent?:Yes   Gophers:8  Size: 1500x1500 
+ Finished: 1926884 microseconds  Concurrent?:Yes   Gophers:8  Size: 1500x1500 
+ Finished: 2020442 microseconds  Concurrent?:Yes   Gophers:8  Size: 1500x1500 
+ Finished: 1765491 microseconds  Concurrent?:Yes   Gophers:8  Size: 1500x1500 
+
+ Finished: 1808859 microseconds  Concurrent?:Yes   Gophers:16  Size: 1500x1500 
+ Finished: 1933114 microseconds  Concurrent?:Yes   Gophers:16  Size: 1500x1500 
+ Finished: 1921879 microseconds  Concurrent?:Yes   Gophers:16  Size: 1500x1500 
+ Finished: 2021692 microseconds  Concurrent?:Yes   Gophers:16  Size: 1500x1500 
+ Finished: 1784156 microseconds  Concurrent?:Yes   Gophers:16  Size: 1500x1500  
+
+
+ Finished: 5922611 microseconds  Concurrent?:No   Gophers:0  Size: 2000x2000 
+ Finished: 6593405 microseconds  Concurrent?:No   Gophers:0  Size: 2000x2000 
+ Finished: 6217401 microseconds  Concurrent?:No   Gophers:0  Size: 2000x2000 
+ Finished: 6387959 microseconds  Concurrent?:No   Gophers:0  Size: 2000x2000 
+ Finished: 6262341 microseconds  Concurrent?:No   Gophers:0  Size: 2000x2000
+  
+ Finished: 3485424 microseconds  Concurrent?:Yes   Gophers:4  Size: 2000x2000 
+ Finished: 3862503 microseconds  Concurrent?:Yes   Gophers:4  Size: 2000x2000 
+ Finished: 4032306 microseconds  Concurrent?:Yes   Gophers:4  Size: 2000x2000 
+ Finished: 3659037 microseconds  Concurrent?:Yes   Gophers:4  Size: 2000x2000 
+ Finished: 3672671 microseconds  Concurrent?:Yes   Gophers:4  Size: 2000x2000 
+ 
+ Finished: 3438733 microseconds  Concurrent?:Yes   Gophers:8  Size: 2000x2000 
+ Finished: 3388137 microseconds  Concurrent?:Yes   Gophers:8  Size: 2000x2000 
+ Finished: 3414151 microseconds  Concurrent?:Yes   Gophers:8  Size: 2000x2000 
+ Finished: 3430308 microseconds  Concurrent?:Yes   Gophers:8  Size: 2000x2000 
+ Finished: 3430308 microseconds  Concurrent?:Yes   Gophers:8  Size: 2000x2000 
+ 
+ Finished: 3117859 microseconds  Concurrent?:Yes   Gophers:16  Size: 2000x2000 
+ Finished: 3336157 microseconds  Concurrent?:Yes   Gophers:16  Size: 2000x2000 
+ Finished: 2823683 microseconds  Concurrent?:Yes   Gophers:16  Size: 2000x2000 
+ Finished: 3209605 microseconds  Concurrent?:Yes   Gophers:16  Size: 2000x2000 
+ Finished: 3403344 microseconds  Concurrent?:Yes   Gophers:16  Size: 2000x2000 
+
+
+ Finished: 12747458 microseconds  Concurrent?:No   Gophers:0  Size: 2500x2500 
+ Finished: 12811214 microseconds  Concurrent?:No   Gophers:0  Size: 2500x2500 
+ Finished: 12858603 microseconds  Concurrent?:No   Gophers:0  Size: 2500x2500 
+ Finished: 12642290 microseconds  Concurrent?:No   Gophers:0  Size: 2500x2500 
+ Finished: 13134464 microseconds  Concurrent?:No   Gophers:0  Size: 2500x2500
+
+ Finished: 10453470 microseconds  Concurrent?:Yes   Gophers:4  Size: 2500x2500 
+ Finished: 10918473 microseconds  Concurrent?:Yes   Gophers:4  Size: 2500x2500 
+ Finished: 10756210 microseconds  Concurrent?:Yes   Gophers:4  Size: 2500x2500 
+ Finished: 10615169 microseconds  Concurrent?:Yes   Gophers:4  Size: 2500x2500 
+ Finished: 10455541 microseconds  Concurrent?:Yes   Gophers:4  Size: 2500x2500 
+ 
+ Finished: 10567200 microseconds  Concurrent?:Yes   Gophers:8  Size: 2500x2500 
+ Finished: 10044364 microseconds  Concurrent?:Yes   Gophers:8  Size: 2500x2500 
+ Finished: 10608347 microseconds  Concurrent?:Yes   Gophers:8  Size: 2500x2500 
+ Finished: 9730421 microseconds  Concurrent?:Yes   Gophers:8  Size: 2500x2500 
+ Finished: 10186897 microseconds  Concurrent?:Yes   Gophers:8  Size: 2500x2500 
+
+ Finished: 10291217 microseconds  Concurrent?:Yes   Gophers:16  Size: 2500x2500 
+ Finished: 9520941 microseconds  Concurrent?:Yes   Gophers:16  Size: 2500x2500 
+ Finished: 10225085 microseconds  Concurrent?:Yes   Gophers:16  Size: 2500x2500 
+ Finished: 9912574 microseconds  Concurrent?:Yes   Gophers:16  Size: 2500x2500 
+ Finished: 9820245 microseconds  Concurrent?:Yes   Gophers:16  Size: 2500x2500 
+ 
+ Finished: 18293473 microseconds  Concurrent?:No   Gophers:0  Size: 3000x3000 
+ Finished: 18427232 microseconds  Concurrent?:No   Gophers:0  Size: 3000x3000 
+ Finished: 18550254 microseconds  Concurrent?:No   Gophers:0  Size: 3000x3000 
+ Finished: 18356639 microseconds  Concurrent?:No   Gophers:0  Size: 3000x3000 
+ Finished: 18236339 microseconds  Concurrent?:No   Gophers:0  Size: 3000x3000
+
+ Finished: 15030655 microseconds  Concurrent?:Yes   Gophers:4  Size: 3000x3000
+ Finished: 15149931 microseconds  Concurrent?:Yes   Gophers:4  Size: 3000x3000 
+ Finished: 14975614 microseconds  Concurrent?:Yes   Gophers:4  Size: 3000x3000 
+ Finished: 15405907 microseconds  Concurrent?:Yes   Gophers:4  Size: 3000x3000 
+ Finished: 15247721 microseconds  Concurrent?:Yes   Gophers:4  Size: 3000x3000 
+  
+ Finished: 14487021 microseconds  Concurrent?:Yes   Gophers:8  Size: 3000x3000 
+ Finished: 14514603 microseconds  Concurrent?:Yes   Gophers:8  Size: 3000x3000 
+ Finished: 14642310 microseconds  Concurrent?:Yes   Gophers:8  Size: 3000x3000 
+ Finished: 14566547 microseconds  Concurrent?:Yes   Gophers:8  Size: 3000x3000 
+ Finished: 14534915 microseconds  Concurrent?:Yes   Gophers:8  Size: 3000x3000
+  
+ Finished: 14628942 microseconds  Concurrent?:Yes   Gophers:16  Size: 3000x3000 
+ Finished: 14581067 microseconds  Concurrent?:Yes   Gophers:16  Size: 3000x3000 
+ Finished: 14866662 microseconds  Concurrent?:Yes   Gophers:16  Size: 3000x3000 
+ Finished: 14696223 microseconds  Concurrent?:Yes   Gophers:16  Size: 3000x3000 
+ Finished: 14465747 microseconds  Concurrent?:Yes   Gophers:16  Size: 3000x3000
+  
+ Finished: 48880766 microseconds  Concurrent?:No   Gophers:0  Size: 5000x5000 
+ Finished: 48887523 microseconds  Concurrent?:No   Gophers:0  Size: 5000x5000 
+ Finished: 48755443 microseconds  Concurrent?:No   Gophers:0  Size: 5000x5000 
+ 
+ Finished: 39899224 microseconds  Concurrent?:Yes   Gophers:4  Size: 5000x5000 
+ Finished: 40046236 microseconds  Concurrent?:Yes   Gophers:4  Size: 5000x5000 
+ Finished: 40552684 microseconds  Concurrent?:Yes   Gophers:4  Size: 5000x5000 
+ 
+ Finished: 38482101 microseconds  Concurrent?:Yes   Gophers:8  Size: 5000x5000 
+ Finished: 38642417 microseconds  Concurrent?:Yes   Gophers:8  Size: 5000x5000 
+ Finished: 38427309 microseconds  Concurrent?:Yes   Gophers:8  Size: 5000x5000 
+ 
+ Finished: 38271813 microseconds  Concurrent?:Yes   Gophers:16  Size: 5000x5000 
+ Finished: 38141334 microseconds  Concurrent?:Yes   Gophers:16  Size: 5000x5000 
+ Finished: 38170271 microseconds  Concurrent?:Yes   Gophers:16  Size: 5000x5000 
+ 
+ 
