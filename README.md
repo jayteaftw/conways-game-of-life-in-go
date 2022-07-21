@@ -83,7 +83,7 @@ func recieve(done <-chan int) error {
 		count += <-done
 	}
 }
-``
+```
 
 Finally instead of Update() being called, updateConcurrent() is called to begin the process of computing the next time step.
 ```
@@ -98,7 +98,7 @@ func updateConcurrent() error {
 
 ### Experiment
 
-Each simulation iterated 100 times
+Each simulation iterated 100 times.
 
 | Grid (seconds) | Sequential | Concurrent (4 Gophers) | Concurrent (8 Gophers) | Concurrent (16 Gophers) |
 | -------------- | ---------- | ---------------------- | ---------------------- | ----------------------- |
