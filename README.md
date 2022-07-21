@@ -1,7 +1,6 @@
 # Conways Game of Life in Go: An Analysis of Concurrent Programming
 
-This repository is an examination of how Go's concurrency can be used to increase the perfoamnce of an application. 
-To demonstrate this, the program simulates Conway's Game of Life as its workload.
+This repository is an examination of how Go's concurrency can be used to increase the performance of an application. To demonstrate this, the program simulates Conway's Game of Life as its workload, and uses a simple load balancer implement concurrency
 
 ### Background
 
@@ -98,8 +97,10 @@ func updateConcurrent() error {
 
 ### Experiment
 
-Each simulation iterated 100 times.
+Each Algorithm as seen Table 1 was timed for how long it took to complete 100 iterations of the simulation. The raw results can be viewed in Table 1
 
+
+#### Table 1: Sequential & Concurrent Algorithms measured in Seconds Vs Grid Size
 | Grid (seconds) | Sequential | Concurrent (4 Gophers) | Concurrent (8 Gophers) | Concurrent (16 Gophers) |
 | -------------- | ---------- | ---------------------- | ---------------------- | ----------------------- |
 | 100x100        | 1.815      | 1.857                  | 1.822                  | 1.806                   |
@@ -112,7 +113,11 @@ Each simulation iterated 100 times.
 | 5000x5000      | 48.841     | 40.166                 | 38.517                 | 38.194                  |
 
 
+### Analysis
+To better analyze the results, we will treat the normalized difference between each of the Concurrent Algorithms and the Baseline sequential Algorithm as our metric. That is our metric Normalized Concurrency Performance Gains is equal to (seq - con)/seq, (1.815 - 1.857)/1.815 = -0.023, and can be seen in Table 2 and Figure 1. 
 
+
+#### Table 2: Normalized Concurrency Performance Gains Compared to Baseline Sequential Algorithm
 | Grid (performance) | 4 Goroutines | 8 Goroutines | 16 Goroutines |
 | ------------------ | ------------ | ------------ | ------------- |
 | 100x100            | -0.023       | -0.004       | 0.005         |
@@ -123,3 +128,9 @@ Each simulation iterated 100 times.
 | 2500x2500          | 0.171        | 0.203        | 0.225         |
 | 3000x3000          | 0.175        | 0.208        | 0.203         |
 | 5000x5000          | 0.178        | 0.211        | 0.218         |
+
+#### Fig 1: Normalized Concurrency Performance Gains Compared to Baseline Sequential Algorithm
+
+As expected the Concurrent algorithms performed the best when there were more cells that needed to be computed, and degraded the perfomance when there were fewer cells that needed to be computed. This makes sense since while Goroutines are cheap, they are not free, which means the cost of spinning up multiple Go routines would outweigh the performance gains of using them for the smaller grid sizes. Interestingly, the concurrent algorithms performed the best when it came to grid sizes 1500x1500 and 2000x2000; however, the concurrent algorithms had diminishing returns when the grid sizes were increased to and past 2500x2500. More investigation should be done because both channel sizes were kept constant at 2500 for each expirment meaning it could be causing a bottleneck for the higher grid sizes.
+
+
