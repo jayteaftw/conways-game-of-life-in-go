@@ -130,7 +130,7 @@ To better analyze the results, we will treat the normalized difference between e
 | 5000x5000          | 0.178        | 0.211        | 0.218         |
 
 #### Fig 1: Normalized Concurrency Performance Gains Compared to Baseline Sequential Algorithm
-
+<img src="https://github.com/jayteaftw/conways-game-of-life-in-go/blob/main/imgs/Fig1.png" height="300" />
 As expected the Concurrent algorithms performed the best when there were more cells that needed to be computed, and degraded the perfomance when there were fewer cells that needed to be computed. This makes sense since while Goroutines are cheap, they are not free, which means the cost of spinning up multiple Go routines would outweigh the performance gains of using them for the smaller grid sizes. Interestingly, the concurrent algorithms performed the best when it came to grid sizes 1500x1500 and 2000x2000; however, the concurrent algorithms had diminishing returns when the grid sizes were increased to and past 2500x2500. More investigation should be done because both channel sizes were kept constant at 2500 for each expirment meaning it could be causing a bottleneck for the higher grid sizes.
 
 
