@@ -4,7 +4,7 @@ This repository is an examination of how Go's concurrency can be used to increas
 
 ### Background
 
-Conway's Game of Life is 2 dimensional zero-player game which takes place over a predetermined time t abd has cells that have two possible states: dead or alive. The rules of the game can be condesed as such
+Conway's Game of Life is 2 dimensional zero-player game which takes place over a predetermined time t and has cells that have two possible states: dead or alive. The rules of the game can be condesed as such
 1. Any live cell with two or three live neighbours survives.
 2. Any dead cell with three live neighbours becomes a live cell.
 3. All other live cells die in the next generation. Similarly, all other dead cells stay dead.
