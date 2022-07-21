@@ -1,4 +1,4 @@
-# Conways Game of Life in Go: An Analysis of Concurrent Programming
+# Conways Game of Life: An Analysis of Concurrent Programming in Go
 
 This repository is an examination of how Go's concurrency can be used to increase the performance of an application. To demonstrate this, the program simulates Conway's Game of Life as its workload, and uses a simple load balancer implement concurrency
 
