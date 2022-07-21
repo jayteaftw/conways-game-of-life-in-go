@@ -10,7 +10,7 @@ Conway's Game of Life is 2 dimensional zero-player game which takes place over a
 3. All other live cells die in the next generation. Similarly, all other dead cells stay dead.
 
 
-This is represented as our compute function where grid represents the current state and buffer represents the next state
+This logic is represented as our compute function where the grid represents the current state and the buffer represents the next state
 ```
 func compute(x int, y int) {
 	buffer[x][y] = 0
@@ -27,7 +27,7 @@ func compute(x int, y int) {
 }
 ```
 #### Sequential Update
-The sequential update does as it sounds: it iterates over each cell in the grid and updates accordingly. We will treat this as our baseline.
+The sequential update functions as it sounds: it iterates over each cell in the grid and updates accordingly. We will treat this as our baseline.
 ```
 func update() error {
 	for x := 1; x < WIDTH-1; x++ {
@@ -43,7 +43,7 @@ func update() error {
 
 ```
 #### Concurrent Update
-The concurrent algorithm is comprised of a simple load balancer model where work is created asynchronous [ func sendFrameOfWork() ] and sent to asynchronous worker routines [func worker(in <-chan int, out chan<- int)], which are initialized when the program first started, that compute said work and update the grid accordingly. 
+The concurrent algorithm is comprised of a simple load balancer model where work is created asynchronous [ func sendFrameOfWork() ] and sent to asynchronous worker routines [func worker(in <-chan int, out chan<- int)], which are initialized when the program first starts, that compute said work and update the grid accordingly. 
 
 ```
 func sendFrameOfWork(in chan<- int) {
@@ -69,7 +69,7 @@ var in chan int = make(chan int, 2500)
 var out chan int = make(chan int, 2500)
 ```
 
-To signal that computation is done, a syncrounous recieve() function is used to tally all the done calls in the out channel.
+To signal that computation for that frame or generation is done, a syncrounous recieve() function is used to tally all the done calls in the out channel.
 ```
 func recieve(done <-chan int) error {
 	count := 0
@@ -97,7 +97,7 @@ func updateConcurrent() error {
 
 ### Experiment
 
-Each Algorithm as seen Table 1 was timed for how long it took to complete 100 iterations of the simulation. The raw results can be viewed in Table 1
+Each Algorithm was timed for how long it took to complete 100 iterations of the simulation. The raw results can be viewed in Table 1
 
 
 #### Table 1: Sequential & Concurrent Algorithms measured in Seconds Vs Grid Size
@@ -114,7 +114,7 @@ Each Algorithm as seen Table 1 was timed for how long it took to complete 100 it
 
 
 ### Analysis
-To better analyze the results, we will treat the normalized difference between each of the Concurrent Algorithms and the Baseline sequential Algorithm as our metric. That is our metric Normalized Concurrency Performance Gains is equal to (seq - con)/seq, (1.815 - 1.857)/1.815 = -0.023, and can be seen in Table 2 and Figure 1. 
+To better analyze the results, we will treat the normalized difference between each of the Concurrent Algorithms and the baseline Sequential Algorithm as our metric. That is our metric Normalized Concurrency Performance Gains is equal to (seq - con)/seq, (1.815 - 1.857)/1.815 = -0.023, and can be seen in Table 2 and visualized in Figure 1. 
 
 
 #### Table 2: Normalized Concurrency Performance Gains Compared to Baseline Sequential Algorithm
@@ -131,6 +131,7 @@ To better analyze the results, we will treat the normalized difference between e
 
 #### Fig 1: Normalized Concurrency Performance Gains Compared to Baseline Sequential Algorithm
 <img src="https://github.com/jayteaftw/conways-game-of-life-in-go/blob/main/imgs/Fig1.png" height="500" />
-As expected the Concurrent algorithms performed the best when there were more cells that needed to be computed, and degraded the perfomance when there were fewer cells that needed to be computed. This makes sense since while Goroutines are cheap, they are not free, which means the cost of spinning up multiple Go routines would outweigh the performance gains of using them for the smaller grid sizes. Interestingly, the concurrent algorithms performed the best when it came to grid sizes 1500x1500 and 2000x2000; however, the concurrent algorithms had diminishing returns when the grid sizes were increased to and past 2500x2500. More investigation should be done because both channel sizes were kept constant at 2500 for each expirment meaning it could be causing a bottleneck for the higher grid sizes. Futhermore, overall the 16 Goroutines performed the best with an average performance score of 0.206, with 8 Goroutines following closely with 0.194, and 4 goruoutines finishing last with 0.170.
+
+As expected the concurrent algorithms performed the best when there were more cells that needed to be computed, and degraded the perfomance when there were fewer cells that needed to be computed. This is sensible since while Goroutines are cheap, they are not free, which means the cost of spinning up multiple Go routines would outweigh the performance gains of using them for the smaller grid sizes. Interestingly, the concurrent algorithms performed the best when it came to grid sizes 1500x1500 and 2000x2000; however, the concurrent algorithms had diminishing returns when the grid sizes were increased to and past 2500x2500. To understad why more investigation should be done because both channel sizes were kept constant at 2500 for each experiment which could be causing a bottleneck when simulating the higher grid sizes. Futhermore, overall the 16 Goroutines performed the best with an average performance increase of 0.206, with 8 Goroutines following closely with 0.194, and 4 goruoutines finishing last with 0.170.
 
 
